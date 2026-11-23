@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6f5">
+  <title>Shades of Red</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #3b1414;
+      background: #fff6f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+    }
+
+    main {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    .intro {
+      max-width: 680px;
+      margin-bottom: 36px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #b73232;
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      letter-spacing: -0.06em;
+      line-height: 1;
+    }
+
+    .intro p:last-child {
+      margin: 18px 0 0;
+      color: #7e5252;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .swatch {
+      overflow: hidden;
+      border: 1px solid #f3e0e0;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgb(101 26 26 / 6%);
+    }
+
+    .color {
+      height: 150px;
+      background: var(--color);
+    }
+
+    .details {
+      padding: 18px 20px 20px;
+    }
+
+    .details h2 {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    .hex {
+      display: inline-block;
+      margin-top: 6px;
+      color: #8f5757;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.9rem;
+    }
+
+    .details p {
+      margin: 12px 0 0;
+      color: #7e5252;
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: #7e5252;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <p class="eyebrow">A color field guide</p>
+      <h1>Shades of Red</h1>
+      <p>From the richness of burgundy to the warmth of coral, red comes in many moods. Explore a few familiar variations and their hexadecimal color values.</p>
+    </header>
+
+    <section class="swatches" aria-label="Red color variants">
+      <article class="swatch">
+        <div class="color" style="--color: #800020" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Burgundy</h2>
+          <span class="hex">#800020</span>
+          <p>Rich and refined, burgundy carries the depth of a fine red wine.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #dc143c" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Crimson</h2>
+          <span class="hex">#DC143C</span>
+          <p>A bold, slightly blue-toned red that feels dramatic and passionate.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #ff2400" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Scarlet</h2>
+          <span class="hex">#FF2400</span>
+          <p>Brilliant and fiery, scarlet leans toward orange with striking intensity.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #d2042d" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Cherry Red</h2>
+          <span class="hex">#D2042D</span>
+          <p>Bright and glossy, like ripe fruit at the height of summer.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #b22222" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Brick Red</h2>
+          <span class="hex">#B22222</span>
+          <p>Earthy and grounded, this warm red recalls sun-baked clay.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #ff6f61" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Coral Red</h2>
+          <span class="hex">#FF6F61</span>
+          <p>A soft, lively red with a gentle pink-orange glow.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer>Color appearance can vary between screens and lighting conditions.</footer>
+  </main>
+</body>
+</html>
