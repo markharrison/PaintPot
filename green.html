@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4faf5">
+  <title>Shades of Green</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #183b27;
+      background: #f4faf5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+    }
+
+    main {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    .intro {
+      max-width: 680px;
+      margin-bottom: 36px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #287348;
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      letter-spacing: -0.06em;
+      line-height: 1;
+    }
+
+    .intro p:last-child {
+      margin: 18px 0 0;
+      color: #506b59;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .swatch {
+      overflow: hidden;
+      border: 1px solid #dfece2;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgb(26 75 43 / 6%);
+    }
+
+    .color {
+      height: 150px;
+      background: var(--color);
+    }
+
+    .details {
+      padding: 18px 20px 20px;
+    }
+
+    .details h2 {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    .hex {
+      display: inline-block;
+      margin-top: 6px;
+      color: #506b59;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.9rem;
+    }
+
+    .details p {
+      margin: 12px 0 0;
+      color: #506b59;
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: #506b59;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <p class="eyebrow">A color field guide</p>
+      <h1>Shades of Green</h1>
+      <p>From deep woodland tones to fresh mint and lively lime, green comes in many moods. Explore six familiar variations with sample hexadecimal color values and ideas for using them.</p>
+    </header>
+
+    <section class="swatches" aria-label="Green color variants">
+      <article class="swatch">
+        <div class="color" style="--color: #228b22" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Forest Green</h2>
+          <span class="hex">#228B22</span>
+          <p>A rich, leafy green inspired by woodland foliage. Use it for grounded accents and nature-inspired palettes.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #50c878" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Emerald Green</h2>
+          <span class="hex">#50C878</span>
+          <p>A vivid, jewel-like green with a cool undertone. It brings a bright, polished accent to a neutral palette.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #808000" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Olive Green</h2>
+          <span class="hex">#808000</span>
+          <p>An earthy yellow-green with a muted character. Pair it with cream, tan, or brown for a warm, natural look.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #b2ac88" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Sage Green</h2>
+          <span class="hex">#B2AC88</span>
+          <p>A soft, grayish green reminiscent of sage leaves. Its restrained tone works well as a gentle backdrop.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #98ff98" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Mint Green</h2>
+          <span class="hex">#98FF98</span>
+          <p>A pale, fresh green that feels light and airy. Combine it with white or deeper greens for a crisp palette.</p>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <div class="color" style="--color: #32cd32" aria-hidden="true"></div>
+        <div class="details">
+          <h2>Lime Green</h2>
+          <span class="hex">#32CD32</span>
+          <p>A bright, energetic green with a yellow note. Use it sparingly for playful highlights that stand out.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer>Shade names can cover a range of colors; these values are examples. Color appearance can vary between screens and lighting conditions.</footer>
+  </main>
+</body>
+</html>
